@@ -30,17 +30,18 @@
     color: #000000;
     text-decoration: none;
     text-transform: uppercase;
-    Width 
-220px
-Height 
-8px
-Top 
-557px
-Left 
-740px
-Blend 
-Pass through
   }
+.standart-link::after{
+::content''
+position:absolute;
+left:20%;
+right:20%;
+display:block;
+width:100%;
+heigh:5em
+background-color: #FFC700
+transform: translate(-50%,-50%)
+z-index: index -1; } 
 
 header {
   background-color: #FFE17F
