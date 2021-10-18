@@ -9,19 +9,19 @@
   </head>
   <body>
   <header>
-    <img class="logo" src="" width="146" height="40">
+    <img class="logo" src="images/logo-header.svg" width="146" height="40">
     <form action="#" method="POST"><button class="found"></button>
     <input type="search" placeholder="Поиск по сайту:">
     <button class="Visually-hidden searching"> Найти</button>
     </form>
     <nav>
       <ul class="first-navigation">
-       <li><a  href="about.html"><img class="icon_entrance" src="user.svg">Войти</a> </li>
-       <li><a  href="about.html"><img class="icon_compare" src="compare.svg">Сравнить</a> </li>
-       <li><a href="about.html"><img class="icon_basket" src="basket.svg">Корзина</a> </li>
+       <li><a  href="about.html"><img class="icon_entrance"  src="images/icons/user.svg" width="16" height="16">Войти</a> </li>
+       <li><a  href="about.html"><img class="icon_compare" src="images/icons/compare.svg" width="16" height="16">Сравнить</a> </li>
+       <li><a href="about.html"><img class="icon_basket" src="images/icons/basket.svg"width="16" height="16" >Корзина</a> </li>
       </ul>
       <ul class="main-navigation">
-      <li><a class="navigation-link" href="about.html">Каталог товаров <img class="icon-plus" src="plus-icon.svg" > </a></li>
+      <li><a class="navigation-link" href="about.html">Каталог товаров <img class="icon" src="images/icons/plus-icon.svg" width="50" height="50"  > </a></li>
       <li><a class="navigation-link" href="about.html" >Доставка </a></li>
       <li><a class="navigation-link" href="about.html" >Гарантия</a> </li>
       <li><a class="navigation-link" href="about.html" >Контакты </a></li>
@@ -30,11 +30,24 @@
 </header>
 <main>
   <h1 class="visibility-hidden">Главная страница магазина «Девайс»</h1>
+
   <section class="slider">
-    <img class="slider-number" src="01-slider.svg" alt="Продукт">
-    <img class="slider-image" src="slider-1.png" alt="Продукт" >
-    <button class="slider-pagination-button next" type="button">
-    <button class="slider-pagination-button prev" type="button"></button>
+    <ol class="slider-number">
+      <li><img class="slider-number" src="01-slider.svg" width="146" height="40" alt="Продукт"></li>
+      <li><img class="slider-number" src="02-slider.svg" width="146" height="40" alt="Продукт"></li>
+      <li><img class="slider-number" src="03-slider.svg" width="146" height="40" alt="Продукт"></li>
+    </ol>
+    <ol>
+      <li><img class="slider-image" src="slider-1.png" width="560" height="560"  alt="Продукт" ></li>
+      <li><img class="slider-image visually-hidden" src="slider-1.png" width="560" height="560"  alt="Продукт" ></li>
+      <li><img class="slider-image visually-hidden" src="slider-1.png" width="560" height="560"  alt="Продукт" ></li>
+    </ol>
+
+    <button class="slider-pagination-button prev" type="button">  <img src="images/icons/slider-right-tall-arrow.svg width="20" height="60"> </button>
+    <span class="Visually-hidden">Предыдущее фото</span>
+    <button class="slider-pagination-button next" type="button" ><img src="images/icons/slider-left-tall-arrow.svg" width="20" height="60"></button>
+    <span class="Visually-hidden">Cледующее фото</span>
+
     <ul class="slider-pagination" type="circle">
       <li><button class="slider-pagination-button prev" type="button"></button>
       <span class="visually-hidden">1 фото</span></button></li>
@@ -57,14 +70,14 @@
     <a href="" class="standart-link">Побробнее </a>
   </section>
 
-  <section class="another products"><h2 class="visually-hidden">Другие продукты</h2>
+  <section class="another-products"><h2 class="visually-hidden">Другие продукты</h2>
   <ul>
-    <li><a href=""><img src="category-1.png" width="160" height="160"> Виртуальная реальность</a> </li>
-    <li><a href=""><img src="category-2.png" width="160" height="160"> Моноподы для селфи </a></li>
-    <li><a href=""><img src="category-3.png" width="160" height="160"> Экш-камеры </a></li>
-    <li><a href=""><img src="category-4.png" width="160" height="160"> Фитнес-браслеты </a></li>
-    <li><a href=""><img src="category-5.png" width="160" height="160"> Умные часы </a></li>
-    <li><a href=""><img src="category-6.png" width="160" height="160"> Квадрокоптеры</a> </li>
+    <li><a href=""><img src="images/category-1.png" width="160" height="160"> Виртуальная реальность</a> </li>
+    <li><a href=""><img src="images/category-2.png" width="160" height="160"> Моноподы для селфи </a></li>
+    <li><a href=""><img src="images/category-3.png" width="160" height="160"> Экш-камеры </a></li>
+    <li><a href=""><img src="images/category-4.png" width="160" height="160"> Фитнес-браслеты </a></li>
+    <li><a href=""><img src="images/category-5.png" width="160" height="160"> Умные часы </a></li>
+    <li><a href=""><img src="images/category-6.png" width="160" height="160"> Квадрокоптеры</a> </li>
   </ul>
    </section>
 <section class="delivery" class="tab-link"><h2 class="visually-hidden">условия покупки</h2>
@@ -76,23 +89,17 @@
   <h2>Доставка</h2>
   <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь
 мы неплохо заработаем, поднимая его на ваш этаж.</p>
-<img src="lillustration-delivery1.png">
-<div class="delivery list">
-  <a href="" ><img src="">
-      <img src="logo.png" />
-
-    </a>
-</div>
+<img src="images/lillustration-delivery1.png">
 </section>
 <section class="about"><h2 class="visually-hidden">О нас</h2>
   <h2>О нас</h2>
   <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
   <p> Мы можем доставить ваш товар в самые отдалённые уголки России транспортными компаниями.</p>
-  <ol class="delivery-list">
+  <ul class="delivery-list">
     <li>Меловые линии </li>
     <li>СДИК </li>
     <li>ТоксБерри </li>
-    </ol>
+    </ul>
     <a href="" class="standart-link" >Побробнее о нас</a>
 </section>
 <section class="contacts"> <h2 class="visually-hidden">Контакты</h2>
@@ -105,9 +112,9 @@
         <li>пн—пт: с 10:00 до 22:00</li>
         <li>сб—вс: с 10:00 до 19:00</li>
       </ul>
-      <a href="" >Напишите нам</a>
+      <a href="#" >Напишите нам</a>
 </section>
-<section class="Check up"><h2 class="visually-hidden">Рассылка</h2>
+<section class="Check-up"><h2 class="visually-hidden">Рассылка</h2>
   <h2>Подпишитесь на рассылку</h2>
   <p>Еженедельный дайджест с обзорами новинок</p>
   <form action="#" method="POST">
@@ -117,20 +124,20 @@
 </section>
     </main>
     <footer>
-      <img class="logo" src="" width="146" height="40" alt="Логотип магазина Девайс">
+      <img class="logo" src="images/logo-header.svg" width="146" height="40" alt="Логотип магазина Девайс">
       <ul class="main-navigation">
         <li><a class="navigation-link" href="about.html" >Доставка </a></li>
         <li><a class="navigation-link" href="about.html">Гарантия</a> </li>
         <li><a class="navigation-link" href="about.html">Контакты </a></li>
         </ul>
         <ul class="social-icons">
-          <li><img src="facebook.svg" alt="переход на фейсбук компании Девайс"></li>
-        <li><img src="instagram.svg" alt="переход на инстаграмм компании Девайс"></li>
-        <li><img src="twitter.svg"  alt="переход на Твиттер компании Девайс"></li></ul>
+          <li><img src="images/sites/facebook.svg" width="40" height="40"alt="переход на фейсбук компании Девайс"></li>
+        <li><img src="images/sites/instagram.svg" width="40" height="40" alt="переход на инстаграмм компании Девайс"></li>
+        <li><img src="images/sites/twitter.svg"  width="40" height="40" alt="переход на Твиттер компании Девайс"></li></ul>
    <address class="address">Санкт-Петербург, набережная
     реки Карповки, 5, литера П.</address>
     <div>Тел.: +7 (812) 812-12-12</div>
-    <img src="htmlacademy-logo-footer.svg" alt="логотип HTML Academy">
+    <img src="htmlacademy-logo-footer.svg" width="116" height="40" alt="логотип HTML Academy">
     </footer>
   </body>
 </html>
