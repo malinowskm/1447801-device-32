@@ -9,19 +9,19 @@
   </head>
   <body>
   <header>
-    <img class="logo" src="images/logo-header.svg" width="146" height="40">
+    <img class="logo" src="images/logo-header.svg" width="146" height="40" alt="логотип, перейти на главную">
     <form action="#" method="POST"><button class="found"></button>
     <input type="search" placeholder="Поиск по сайту:">
     <button class="Visually-hidden searching"> Найти</button>
     </form>
     <nav>
       <ul class="first-navigation">
-       <li><a  href="about.html"><img class="icon_entrance"  src="images/icons/user.svg" width="16" height="16">Войти</a> </li>
-       <li><a  href="about.html"><img class="icon_compare" src="images/icons/compare.svg" width="16" height="16">Сравнить</a> </li>
-       <li><a href="about.html"><img class="icon_basket" src="images/icons/basket.svg"width="16" height="16" >Корзина</a> </li>
+       <li><a  href="about.html" class="icon_entrance" >Войти</a> </li>
+       <li><a  href="about.html" class="icon_compare">>Сравнить</a> </li>
+       <li><a href="about.html" class="icon_basket" >  Корзина</a> </li>
       </ul>
       <ul class="main-navigation">
-      <li><a class="navigation-link" href="about.html">Каталог товаров <img class="icon" src="images/icons/plus-icon.svg" width="50" height="50"  > </a></li>
+      <li><a class="navigation-link-plus" href="about.html">Каталог товаров </a></li>
       <li><a class="navigation-link" href="about.html" >Доставка </a></li>
       <li><a class="navigation-link" href="about.html" >Гарантия</a> </li>
       <li><a class="navigation-link" href="about.html" >Контакты </a></li>
@@ -31,11 +31,11 @@
 <main>
   <h1 class="visibility-hidden">Главная страница магазина «Девайс»</h1>
 
-  <section class="slider">
+  <section class="slider"><h2 class="visually-hidden">Cлайдер</h2>
     <ol class="slider-number">
       <li><img class="slider-number" src="01-slider.svg" width="146" height="40" alt="Продукт"></li>
-      <li><img class="slider-number" src="02-slider.svg" width="146" height="40" alt="Продукт"></li>
-      <li><img class="slider-number" src="03-slider.svg" width="146" height="40" alt="Продукт"></li>
+      <li><img class="slider-number visually-hidden" src="02-slider.svg" width="146" height="40" alt="Продукт"></li>
+      <li><img class="slider-number visually-hidden" src="03-slider.svg" width="146" height="40" alt="Продукт"></li>
     </ol>
     <ol>
       <li><img class="slider-image" src="slider-1.png" width="560" height="560"  alt="Продукт" ></li>
@@ -43,9 +43,11 @@
       <li><img class="slider-image visually-hidden" src="slider-1.png" width="560" height="560"  alt="Продукт" ></li>
     </ol>
 
-    <button class="slider-pagination-button prev" type="button">  <img src="images/icons/slider-right-tall-arrow.svg width="20" height="60"> </button>
+    <button class="slider-pagination-button prev" type="button">
+      <img src="images/icons/slider-right-tall-arrow.svg" width="20" height="60" alt="следующее изображение"> </button>
     <span class="Visually-hidden">Предыдущее фото</span>
-    <button class="slider-pagination-button next" type="button" ><img src="images/icons/slider-left-tall-arrow.svg" width="20" height="60"></button>
+    <button class="slider-pagination-button next" type="button" >
+      <img src="images/icons/slider-left-tall-arrow.svg" width="20" height="60" alt="следующее изображение"></button>
     <span class="Visually-hidden">Cледующее фото</span>
 
     <ul class="slider-pagination" type="circle">
@@ -60,7 +62,8 @@
       <span class="visually-hidden">4 фото</span> </button></li>
       </ul>
   </section>
-    <H2>Порхает как бабочка, жалит как пчела</H2>
+    <section><h2 class="visually-hidden">Слайды</h2>
+      <p class="slogan">Порхает как бабочка, жалит как пчела</p>
     <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером,
       замаскированным под стандартную камеру.</p>
     <ul>
@@ -89,8 +92,8 @@
   <h2>Доставка</h2>
   <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь
 мы неплохо заработаем, поднимая его на ваш этаж.</p>
-<img src="images/lillustration-delivery1.png">
 </section>
+<div class="delivery-banner-link">Доставим редкий товар под заказ<a href="#" ></a></div>
 <section class="about"><h2 class="visually-hidden">О нас</h2>
   <h2>О нас</h2>
   <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
@@ -131,9 +134,9 @@
         <li><a class="navigation-link" href="about.html">Контакты </a></li>
         </ul>
         <ul class="social-icons">
-          <li><img src="images/sites/facebook.svg" width="40" height="40"alt="переход на фейсбук компании Девайс"></li>
-        <li><img src="images/sites/instagram.svg" width="40" height="40" alt="переход на инстаграмм компании Девайс"></li>
-        <li><img src="images/sites/twitter.svg"  width="40" height="40" alt="переход на Твиттер компании Девайс"></li></ul>
+          <li> <button class="button-icon"><span class="visually-hidden">Перейти в Facebook.</span></button></li>
+        <li><button class="button-icon"><span class="visually-hidden">Перейти в Инстаграмм.</span></button><img src="images/sites/instagram.svg" width="40" height="40" alt="переход на инстаграмм компании Девайс"></li>
+        <li><button class="button-icon"><span class="visually-hidden">Перейти в Твиттер.</span></button></li></ul>
    <address class="address">Санкт-Петербург, набережная
     реки Карповки, 5, литера П.</address>
     <div>Тел.: +7 (812) 812-12-12</div>
