@@ -8,27 +8,7 @@
 </head>
 
 <body>
-  <header>
-    <img class="logo" src="" width="146" height="40" alt="логг">
-    <form action="#" method="POST"><button class="found"></button>
-      <input type="search" placeholder="Поиск по сайту:">
-      <button class="Visually-hidden searching"> Найти</button>
-    </form>
-    <nav>
-      <ol class="first-navigation">
-        <li><a href="about.html"><img class="icon_entrance" src="user.svg">Войти</a> </li>
-        <li><a href="about.html"><img class="icon_compare" src="compare.svg">Сравнить</a> </li>
-        <li><a href="about.html"><img class="icon_basket" src="basket.svg">Корзина</a> </li>
-      </ol>
-      <ul сlass="main-navigation">
-        <li><a class="navigation-link" href="about.html">Каталог товаров <img class="icon-plus" src="plus-icon.svg">
-          </a></li>
-        <li><a class="navigation-link" href="about.html">Доставка </a></li>
-        <li><a class="navigation-link" href="about.html">Гарантия</a></li>
-        <li><a class="navigation-link" href="about.html">Контакты </a></li>
-      </ul>
-    </nav>
-  </header>
+
   <main>
     <div>
       <h2 class="visually-hidden">breadcrumbs</h2>
@@ -53,21 +33,38 @@
         </a></div>
       <div class="pagination"><a href="#">Назад</a> <a href="">Вперед</a></div>
     </section>
+
     <section class="filter">
       <h2 class="visually-hidden">Фильтр</h2>
       <p>Стоимость</p>
       <label>
-        <input type="range" min="0" max="100" step="1" value="75">
+        1 <input type="range" min="0" max="100" step="1" value="100">
+        100
       </label>
       <p>от 0 до 5000 </p>
-      <form action="#" method="get">
+      <fieldset class="catalog-filter-group">
+        <legend class="catalog-filter-title">Цена</legend>
+        <button class="range-toggle toggle-min" type="button">
+          <span class="visually-hidden">Изменить минимальную цену.</span>
+        </button>
+        <button class="range-toggle toggle-max" type="button">
+          <span class="visually-hidden">Изменить максимальную цену.</span>
+        </button>
+        <p><label class="catalog-filter-label">
+          от <input class="catalog-filter-input" type="number" name="min-price"> мин.
+        </label>
+      <label>до<input class="catalog-filter-input" type="number" name="max-price">макс.
+      </label>
+      <form action="#" method="get"></p>
         <fieldset>
           <legend>Цвет</legend>
-          <label><input type="checkbox" name="сolor-black" value="black">черный</label>
-          <label><input type="checkbox" name="сolor-white" value="white">белый</label>
-          <label><input type="checkbox" name="сolor-blue" value="blue">синий</label>
-          <label><input type="checkbox" name="сolor-red" value="red">красный</label>
-          <label><input type="checkbox" name="сolor-pink" value="pink">розовый</label>
+          <ul>
+          <li><label><input type="checkbox" name="сolor-black" value="black">черный</label></li>
+          <li><label><input type="checkbox" name="сolor-white" value="white">белый</label></li>
+          <li><label><input type="checkbox" name="сolor-blue" value="blue">синий</label></li>
+          <li><label><input type="checkbox" name="сolor-red" value="red">красный</label></li>
+          <li><label><input type="checkbox" name="сolor-pink" value="pink">розовый</label></li>
+        </ul>
         </fieldset>
         <fieldset>
           <legend>Блютуз</legend>
@@ -78,22 +75,7 @@
       </form>
     </section>
   </main>
-  <footer>
-    <img class="logo" src="" width="146" height="40" alt="Логотип магазина Девайс">
-    <ul class="main-navigation">
-      <li><a class="navigation-link" href="about.html" >Доставка </a></li>
-      <li><a class="navigation-link" href="about.html">Гарантия</a> </li>
-      <li><a class="navigation-link" href="about.html">Контакты </a></li>
-      </ul>
-      <ul class="social-icons">
-        <li><img src="images/sites/facebook.svg" alt="переход на фейсбук компании Девайс"></li>
-      <li><img src="images/sites/instagram.svg" alt="переход на инстаграмм компании Девайс"></li>
-      <li><img src="images/sites/twitter.svg"  alt="переход на Твиттер компании Девайс"></li></ul>
- <address class="address">Санкт-Петербург, набережная
-  реки Карповки, 5, литера П.</address>
-  <div>Тел.: +7 (812) 812-12-12</div>
-  <img src="images/icons/htmlacademy-logo-footer.svg" alt="логотип HTML Academy">
-  </footer>
+
 </body>
 
 </html>

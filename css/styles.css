@@ -1,7 +1,7 @@
 
 
 @font-face {
-    font-family: "Rubik"; sans-serif;
+    font-family: Rubik; sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
@@ -9,48 +9,52 @@
     font-display: swap;
   }
   @font-face {
-    font-family: "Rubik";
-    font-style: bold;
+    font-family: Rubik;
+    font-style: normal;
     font-weight: 700;
     font-size: 18px;
     src: url("fonts/rubik/rubik-700.woff2") format("woff2");
     font-display: swap;
   }
   @font-face {
-    font-family: "Raleway";
+    font-family: Raleway;
     font-style: normal;
     font-weight: 800;
-    font-weight: extrabold;
     font-size: 18px;
     src: url("fonts/raleway/raleway-800.woff2") format("woff2");
     font-display: swap;
   }
   @font-face {
-    font-family: "Raleway";
+    font-family: Raleway;
     font-style: normal;
     font-weight: 800;
-    font-weight: extrabold;
     font-size: 40px;
     src: url("fonts/raleway/raleway-800.woff2") format("woff2");
     font-display: swap;
   }
   @font-face {
-    font-family: "Raleway";
+    font-family: Raleway;
     font-style: normal;
     font-weight: 800;
-    font-weight: extrabold;
     font-size: 50px;
     src: url("fonts/raleway/raleway-800.woff2") format("woff2");
     font-display: swap;
   }
   body{
-    font-family: "Rubik"sans-serif;
+    font-family: Rubik; sans-serif;
     font-size: 18px;
     line-height: 30;
     background-color: white;
     сolor:#444444;
     text-decoration: none;
   }
+  button {
+    font-family: Raleway;
+    font-size:inherit;
+    font-style: normal;
+    font-weight: 800;
+  }
+
   div .check-up .delivery-banner-link{background-color:#F0F0F0 ;}
   .standart-link {
     font-family: inherit;
@@ -90,8 +94,8 @@ top: 17px;
 padding:15px;
 }
 nav .icon_entrance{background-image: url("images/icons/user.svg");}
-nav .icon_compare{background-image: url("images/icons/user.svg");}
-nav .icon_basket{background-image: url("images/icons/user.svg");}
+nav .icon_compare{background-image: url("images/icons/compare.svg");}
+nav .icon_basket{background-image: url("images/icons/basket.svg");}
 .slider{}
 .slider-number{}
 .slider-pagination-button{}
@@ -103,7 +107,7 @@ nav .icon_basket{background-image: url("images/icons/user.svg");}
   section .slider{}
   section .another-products{
   font-family: "Raleway";
-  font-style: bold;
+  font-style:normal;
   }
   section .about{}
   section .contacts{}
@@ -121,5 +125,5 @@ font-style: regular;
 font-size:16px}
 footer .navigation
 {
-  font-family: "Raleway";
-  font-style: extrabold;}
+  font-family: Raleway;
+  font-style: normal;}
