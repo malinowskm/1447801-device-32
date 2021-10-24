@@ -1,7 +1,7 @@
 
 
 @font-face {
-    font-family: Rubik; sans-serif;
+    font-family: Rubik, sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
@@ -41,11 +41,11 @@
     font-display: swap;
   }
   body{
-    font-family: Rubik; sans-serif;
+    font-family: Rubik, sans-serif;
     font-size: 18px;
-    line-height: 30;
+    font-weight: 400;
     background-color: white;
-    сolor:#444444;
+    color:#444444;
     text-decoration: none;
   }
   button {
@@ -54,48 +54,42 @@
     font-style: normal;
     font-weight: 800;
   }
+  .visually-hidden{visibility: hidden;}
 
   div .check-up .delivery-banner-link{background-color:#F0F0F0 ;}
   .standart-link {
     font-family: inherit;
     font-size: 18px;
-    line-height: 16px;
+    line-height: 16;
     font-weight: 700;
     text-align: center;
     color: #000000;
     text-decoration: none;
     text-transform: uppercase;
+    text-decoration: none;
   }
-.standart-link: after{
-:content''
-position:absolute;
-left:20%;
-right:20%;
-display:block;
-width:100%;
-heigh:5em
-background-color: #FFC700
-transform: translate(-50%,-50%)
-z-index: index -1; }
+
 
 header {
-  background-color: #FFE17F
-  position: absolute;
+background-color: #FFE17F ;
+position: absolute;
 width: 1160px;
 height: 323px;
 left: 140px;
 top: 17px;
+text-decoration: none;
 }
 .navigation{
-  font-size:18px;
-  text-transform:uppercase;
-  line-height: 21
-  vertical-align:middle;
-padding:15px;
+font-size:18px;
+text-transform:uppercase;
+line-height: 21 ;
+vertical-align: middle;
+padding: 15px ;
+
 }
-nav .icon_entrance{background-image: url("images/icons/user.svg");}
-nav .icon_compare{background-image: url("images/icons/compare.svg");}
-nav .icon_basket{background-image: url("images/icons/basket.svg");}
+nav .icon_entrance {background-image: url("/images/icons/user.svg"); background-repeat:no-repeat;}
+nav .icon_compare {background-image: url("/images/icons/compare.svg");  background-repeat:no-repeat;}
+nav .icon_basket {background-image: url("/images/icons/basket.svg"); background-repeat:no-repeat;}
 .slider{}
 .slider-number{}
 .slider-pagination-button{}
@@ -109,21 +103,28 @@ nav .icon_basket{background-image: url("images/icons/basket.svg");}
   font-family: "Raleway";
   font-style:normal;
   }
-  section .about{}
-  section .contacts{}
-  .delivery{background-image: url("illustration-delivery1.png")
-  div .delivery-banner-link{background-image: url("images/icons/link.svg")}
-  .adress{font-style:normal;}
+section .about{}
+section .contacts{}
+.delivery{background-image: url("/images/illustration-delivery1.png");
+background-position: top right;
+background-repeat:no-repeat;
+  }
+  div .delivery-banner-link{background-image: url("/images/icons/link.svg");
+  }
+  .adress{font-style:normal;
+  }
   section .check-up{
   }
 
 footer{
-  background-color: #444444;
-color:white
+background-color: #444444;
+color:white;
 font-family: inherit;
-font-style: regular;
-font-size:16px}
+font-style: normal ;
+font-size:16px ;
+}
 footer .navigation
 {
   font-family: Raleway;
-  font-style: normal;}
+  font-style: normal;
+  text-decoration: none}
